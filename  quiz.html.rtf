@@ -1,0 +1,123 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\pard\tqr\tx720\tqr\tx1440\tqr\tx2160\tqr\tx2880\tqr\tx3600\tqr\tx4320\tqr\tx5040\tqr\tx5760\tqr\tx6480\tqr\tx7200\tqr\tx7920\tqr\tx8640\pardirnatural\qr\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="he">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>\uc0\u1514 \u1512 \u1490 \u1493 \u1500  \u1502 \u1488 \u1494 \u1503  - \u1511 \u1496 \u1490 \u1493 \u1512 \u1497 \u1493 \u1514 </title>\
+    <style>\
+        body \{\
+            font-family: Arial, sans-serif;\
+            direction: rtl;\
+            text-align: right;\
+        \}\
+        .question \{\
+            margin-top: 20px;\
+            font-size: 20px;\
+        \}\
+        .answer \{\
+            margin: 10px 0;\
+            padding: 10px;\
+            background-color: #f0f0f0;\
+            border: 1px solid #ccc;\
+            cursor: pointer;\
+            display: block;\
+            width: 100%;\
+            text-align: right;\
+        \}\
+        .correct \{\
+            background-color: green;\
+            color: white;\
+        \}\
+        .incorrect \{\
+            background-color: red;\
+            color: white;\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<h1>\uc0\u1514 \u1512 \u1490 \u1493 \u1500  \u1494 \u1497 \u1492 \u1493 \u1497  \u1505 \u1506 \u1497 \u1508 \u1497 \u1501  \u1489 \u1502 \u1488 \u1494 \u1503 </h1>\
+\
+<div class="question" id="question1">\
+    <p>\uc0\u1502 \u1494 \u1493 \u1502 \u1504 \u1497 \u1501 /\u1506 \u1493 "\u1513 /\u1511 \u1493 \u1508 \u1492 </p>\
+    <button class="answer" onclick="checkAnswer(1, 'a')">\uc0\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(1, 'b')">\uc0\u1489 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(1, 'c')">\uc0\u1490 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(1, 'd')">\uc0\u1491 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(1, 'e')">\uc0\u1492 . \u1492 \u1493 \u1503  \u1506 \u1510 \u1502 \u1497 </button>\
+</div>\
+\
+<div class="question" id="question2">\
+    <p>\uc0\u1508 \u1497 \u1511 \u1491 \u1493 \u1504 \u1493 \u1514  \u1500 \u1494 \u1502 \u1503  \u1511 \u1510 \u1512 </p>\
+    <button class="answer" onclick="checkAnswer(2, 'a')">\uc0\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(2, 'b')">\uc0\u1489 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(2, 'c')">\uc0\u1490 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(2, 'd')">\uc0\u1491 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(2, 'e')">\uc0\u1492 . \u1492 \u1493 \u1503  \u1506 \u1510 \u1502 \u1497 </button>\
+</div>\
+\
+<div class="question" id="question3">\
+    <p>\uc0\u1492 \u1513 \u1511 \u1506 \u1493 \u1514  \u1500 \u1494 \u1502 \u1503  \u1511 \u1510 \u1512 </p>\
+    <button class="answer" onclick="checkAnswer(3, 'a')">\uc0\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(3, 'b')">\uc0\u1489 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(3, 'c')">\uc0\u1490 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(3, 'd')">\uc0\u1491 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(3, 'e')">\uc0\u1492 . \u1492 \u1493 \u1503  \u1506 \u1510 \u1502 \u1497 </button>\
+</div>\
+\
+<div class="question" id="question4">\
+    <p>\uc0\u1513 \u1496 \u1512 \u1493 \u1514  (\u1510 \u1523 \u1511 \u1497 \u1501 ) \u1500 \u1490 \u1489 \u1497 \u1497 \u1492 /\u1500 \u1511 \u1489 \u1500 </p>\
+    <button class="answer" onclick="checkAnswer(4, 'a')">\uc0\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(4, 'b')">\uc0\u1489 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(4, 'c')">\uc0\u1490 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(4, 'd')">\uc0\u1491 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(4, 'e')">\uc0\u1492 . \u1492 \u1493 \u1503  \u1506 \u1510 \u1502 \u1497 </button>\
+</div>\
+\
+<div class="question" id="question5">\
+    <p>\uc0\u1500 \u1511 \u1493 \u1495 \u1493 \u1514  \u1500 \u1488 \u1495 \u1512  \u1492 \u1508 \u1512 \u1513 \u1492  \u1500 \u1495 \u1493 \u1489 \u1493 \u1514  \u1502 \u1505 \u1493 \u1508 \u1511 \u1497 \u1501 </p>\
+    <button class="answer" onclick="checkAnswer(5, 'a')">\uc0\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(5, 'b')">\uc0\u1489 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 </button>\
+    <button class="answer" onclick="checkAnswer(5, 'c')">\uc0\u1490 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(5, 'd')">\uc0\u1491 . \u1492 \u1514 \u1495 \u1497 \u1497 \u1489 \u1493 \u1497 \u1493 \u1514  \u1489 \u1500 \u1514 \u1497  \u1513 \u1493 \u1496 \u1508 \u1493 \u1514 </button>\
+    <button class="answer" onclick="checkAnswer(5, 'e')">\uc0\u1492 . \u1492 \u1493 \u1503  \u1506 \u1510 \u1502 \u1497 </button>\
+</div>\
+\
+<!-- \uc0\u1492 \u1493 \u1505 \u1507  \u1513 \u1488 \u1500 \u1493 \u1514  \u1504 \u1493 \u1505 \u1508 \u1493 \u1514  \u1499 \u1508 \u1497  \u1513 \u1514 \u1510 \u1496 \u1512 \u1498  -->\
+\
+<script>\
+    // \uc0\u1514 \u1513 \u1493 \u1489 \u1493 \u1514  \u1504 \u1499 \u1493 \u1504 \u1493 \u1514  \u1500 \u1499 \u1500  \u1513 \u1488 \u1500 \u1492 \
+    const correctAnswers = \{\
+        1: 'a',  // \uc0\u1514 \u1513 \u1493 \u1489 \u1492  \u1504 \u1499 \u1493 \u1504 \u1492  \u1500 \u1513 \u1488 \u1500 \u1492  1 \u1492 \u1497 \u1488  '\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 '\
+        2: 'a',  // \uc0\u1514 \u1513 \u1493 \u1489 \u1492  \u1504 \u1499 \u1493 \u1504 \u1492  \u1500 \u1513 \u1488 \u1500 \u1492  2 \u1492 \u1497 \u1488  '\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 '\
+        3: 'a',  // \uc0\u1514 \u1513 \u1493 \u1489 \u1492  \u1504 \u1499 \u1493 \u1504 \u1492  \u1500 \u1513 \u1488 \u1500 \u1492  3 \u1492 \u1497 \u1488  '\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 '\
+        4: 'a',  // \uc0\u1514 \u1513 \u1493 \u1489 \u1492  \u1504 \u1499 \u1493 \u1504 \u1492  \u1500 \u1513 \u1488 \u1500 \u1492  4 \u1492 \u1497 \u1488  '\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 '\
+        5: 'a',  // \uc0\u1514 \u1513 \u1493 \u1489 \u1492  \u1504 \u1499 \u1493 \u1504 \u1492  \u1500 \u1513 \u1488 \u1500 \u1492  5 \u1492 \u1497 \u1488  '\u1488 . \u1504 \u1499 \u1505 \u1497 \u1501  \u1513 \u1493 \u1496 \u1508 \u1497 \u1501 '\
+    \};\
+\
+    // \uc0\u1508 \u1493 \u1504 \u1511 \u1510 \u1497 \u1492  \u1500 \u1489 \u1491 \u1497 \u1511 \u1514  \u1492 \u1514 \u1513 \u1493 \u1489 \u1492 \
+    function checkAnswer(questionNumber, selectedAnswer) \{\
+        // \uc0\u1502 \u1505 \u1502 \u1498  \u1499 \u1500  \u1492 \u1499 \u1508 \u1514 \u1493 \u1512 \u1497 \u1501  \u1489 \u1513 \u1488 \u1500 \u1492  \u1492 \u1504 \u1493 \u1499 \u1495 \u1497 \u1514 \
+        const buttons = document.querySelectorAll(`#question$\{questionNumber\} .answer`);\
+        \
+        // \uc0\u1500 \u1499 \u1500  \u1499 \u1508 \u1514 \u1493 \u1512 , \u1504 \u1510 \u1489 \u1506  \u1500 \u1508 \u1497  \u1488 \u1501  \u1492 \u1514 \u1513 \u1493 \u1489 \u1492  \u1504 \u1499 \u1493 \u1504 \u1492  \u1488 \u1493  \u1500 \u1488 \
+        buttons.forEach(button => \{\
+            const answerId = button.innerHTML.substring(0, 1);  // \uc0\u1502 \u1511 \u1489 \u1500  \u1488 \u1514  \u1492 \u1488 \u1493 \u1514  \u1513 \u1500  \u1492 \u1514 \u1513 \u1493 \u1489 \u1492  (\u1488 ', \u1489 ', \u1490 '...)\
+            if (answerId === correctAnswers[questionNumber]) \{\
+                button.classList.add('correct');\
+            \} else if (button === event.target) \{\
+                button.classList.add('incorrect');\
+            \}\
+        \});\
+    \}\
+</script>\
+\
+</body>\
+</html>}
